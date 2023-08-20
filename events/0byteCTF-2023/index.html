@@ -1,0 +1,223 @@
+<!doctype html>
+<html lang="en" data-bs-theme="dark">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>0byteCTF 2023 | Capture the Flag Competition by ZeroByte.ID</title>
+    <meta name="description" content="Join the 0byteCTF-2023, a Capture the Flag competition organized by ZeroByte.ID. Test your hacking skills and become a modern-day ninja in the world of cybersecurity.">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+    <style>.timeline,.timeline .timeline-item{position:relative}:root{--neon-blue:184,96%,46%}svg{font-family:"Bebas Neue",sans-serif;width:100%;height:100%}svg text{animation:3s infinite alternate stroke;stroke-width:2;stroke:#91D7E1;font-size:50px;font-weight:bolder}@keyframes stroke{0%{fill:rgba(145,215,225,0);stroke:rgba(145,215,225,1);stroke-dashoffset:25%;stroke-dasharray:0 50%;stroke-width:2}70%{fill:rgba(145,215,225,0);stroke:rgba(145,215,225,1)}80%{fill:rgba(145,215,225,0);stroke:rgba(145,215,225,1);stroke-width:3}100%{fill:rgba(145,215,225,1);stroke:rgba(145,215,225,0);stroke-dashoffset:-25%;stroke-dasharray:50% 0;stroke-width:0}}.timeline{border-left:1px solid #91d7e1;list-style:none}.timeline .timeline-item:after{position:absolute;display:block;top:0;background-color:#91d7e1;left:-38px;border-radius:50%;height:11px;width:11px;content:""}ul.cyberpunk{display:-webkit-box;display:-ms-flexbox;display:flex;-ms-flex-wrap:wrap;flex-wrap:wrap;-webkit-box-pack:center;-ms-flex-pack:center;justify-content:center;-webkit-box-align:center;-ms-flex-align:center;align-items:center;margin:1.5em auto;font-size:.8em;text-align:center}li.cyberpunk{list-style-type:none;border:.2rem solid #91d7e1;padding:2em;font-weight:bolder;margin:.5em;border-radius:15%;background:hsl(var(--dark-blue));-webkit-box-shadow:0 0 1.2rem hsla(var(--neon-blue),.3),.1rem .1rem 1.2rem hsla(var(--neon-blue),.3),-.1rem .1rem 1.2rem hsla(var(--neon-blue),.3),.1rem -.1rem 1.2rem hsla(var(--neon-blue),.3),-.1rem -.1rem 1.2rem hsla(var(--neon-blue),.3),0 0 1.5rem hsla(var(--neon-blue),.4) inset,.1rem .1rem 1.5rem hsla(var(--neon-blue),.2) inset,-.1rem .1rem 1.5rem hsla(var(--neon-blue),.2) inset,.1rem -.1rem 1.5rem hsla(var(--neon-blue),.2) inset,-.1rem -.1rem 1.5rem hsla(var(--neon-blue),.2) inset;box-shadow:0 0 1.2rem hsla(var(--neon-blue),.3),.1rem .1rem 1.2rem hsla(var(--neon-blue),.3),-.1rem .1rem 1.2rem hsla(var(--neon-blue),.3),.1rem -.1rem 1.2rem hsla(var(--neon-blue),.3),-.1rem -.1rem 1.2rem hsla(var(--neon-blue),.3),0 0 1.5rem hsla(var(--neon-blue),.4) inset,.1rem .1rem 1.5rem hsla(var(--neon-blue),.2) inset,-.1rem .1rem 1.5rem hsla(var(--neon-blue),.2) inset,.1rem -.1rem 1.5rem hsla(var(--neon-blue),.2) inset,-.1rem -.1rem 1.5rem hsla(var(--neon-blue),.2) inset;-webkit-transition:-webkit-transform .1s;transition:transform .1s;transition:transform .1s,-webkit-transform .1s}li.cyberpunk:nth-child(3n){-webkit-transform:rotate(8deg);transform:rotate(8deg)}li.cyberpunk:nth-child(2n+2){-webkit-transform:rotate(-8deg);transform:rotate(-8deg)}li.cyberpunk:hover{-webkit-transform:rotate(0);transform:rotate(0);-webkit-animation:.4s linear flicker;animation:.4s linear flicker}</style>
+  </head>
+  <body>
+  	<div class="container">
+
+			<div class="text-center">
+			  <img src="https://zerobyte.id/img/0byteCTF-2023-Logo.png" class="rounded img-fluid p-5 w-50" alt="0byteCTF 2023 Logo">
+			</div>
+
+  		<div class="row">
+  			<p style="text-align: justify;" class="font-monospace">We extend our heartfelt gratitude to the <b>250+</b> participants who have joined, our sponsors, and our colleagues who have contributed to the success of this event. This event is organized to commemorate <b>Indonesia's 78th Independence Day</b> in 2023. The competition being held focuses on the theme of Cyber Security, specifically Capture the Flag, with various categories including Web Exploitation, Cryptography, Digital Forensic, PWN (Binary Exploitation), Reverse Engineering, and Boot to Root.</p>
+  		</div>
+			<!-- Section: Timeline -->
+			<h2 style="font-family: 'Bebas Neue'; color: #91D7E1" class="mt-5">Timeline</h2>
+			<section class="font-monospace">
+			  <ul class="timeline">
+			    <li class="timeline-item mb-5">
+			      <h5 class="fw-bolder">Event Announced!</h5>
+			      <p class="text-muted mb-2 fw-bold">~ 12-Aug-2023</p>
+			      <p class="text-muted">The event was announced on the ZeroByte.ID Facebook fan-page. Registration will commence on August 12, 2023, and will run until August 16, 2023.</p>
+			    </li>
+			    <li class="timeline-item mb-5">
+			      <h5 class="fw-bolder">250+ Participants Reached!</h5>
+			      <p class="text-muted mb-2 fw-bold">~ 16-Aug-2023</p>
+			      <p class="text-muted">This event passed 250+ registered participants!</p>
+			    </li>
+			    <li class="timeline-item mb-5">
+			      <h5 class="fw-bolder">Event Started!</h5>
+			      <p class="text-muted mb-2 fw-bold">19-Aug-2023 07:45:00 +07:00</p>
+			      <p class="text-muted">In this event getting to the Scoreboard is not easy, there are several challenges that we provide at the beginning so that only 100+ participants succeed.</p>
+			    </li>
+			    <li class="timeline-item mb-5">
+			      <h5 class="fw-bolder">Event Completed!</h5>
+			      <p class="text-muted mb-2 fw-bold">20-Aug-2023 00:00:00 +07:00</p>
+			      <p class="text-muted">Even though there were some issues, the event was completed very well! Thank you to all of you!</p>
+			    </li>
+			    <li class="timeline-item mb-5">
+			      <h5 class="fw-bolder">Winners Rewarded!</h5>
+			      <p class="text-muted mb-2 fw-bold">~ 26-Aug-2023</p>
+			      <p class="text-muted">Not finished yet...</p>
+			    </li>
+			  </ul>
+			</section>
+			<!-- Section: Timeline -->
+
+			<!-- <div class="row text-center mt-2"><h1 class="fw-bolder" style="font-family: 'Bebas Neue';">Free Registration Fee | With <span style="color:#E7CF27">IDR 2,450K+</span> Prizepool | <span style="color:#91D7E1">250+</span> REGISTERED PARTICIPANTS</h1></div> -->
+
+			<h2 style="font-family: 'Bebas Neue'; color: #91D7E1" class="mt-5">Committees</h2>
+			<ul class="cyberpunk" style="display: flex;">
+				<li class="cyberpunk font-monospace"><a href="https://id.linkedin.com/in/tri-firdyanto-a56396198" style="text-decoration: none;" class="text-white" target="_blank">Tri Firdyanto</a></li>
+				<li class="cyberpunk font-monospace"><a href="https://id.linkedin.com/in/bayufedra" style="text-decoration: none;" class="text-white" target="_blank">Bayu Fedra</a></li>
+				<li class="cyberpunk font-monospace"><a href="https://id.linkedin.com/in/ahmad-fauzzan-maghribi-679a90152" style="text-decoration: none;" class="text-white" target="_blank">Ahmad Fauzzan Maghribi</a></li>
+				<li class="cyberpunk font-monospace"><a href="https://id.linkedin.com/in/riodrwn" style="text-decoration: none;" class="text-white" target="_blank">Rio Darmawan</a></li>
+				<li class="cyberpunk font-monospace"><a href="https://id.linkedin.com/in/aldi-nugraha" style="text-decoration: none;" class="text-white" target="_blank">Aldi Nugraha P</a></li>
+				<li class="cyberpunk font-monospace"><a href="https://id.linkedin.com/in/yuyudhn" style="text-decoration: none;" class="text-white" target="_blank">Yudha Prasetya</a></li>
+				<li class="cyberpunk font-monospace"><a href="https://id.linkedin.com/in/abdiprawiran" style="text-decoration: none;" class="text-white" target="_blank">Abdi Prawira N</a></li>
+				<li class="cyberpunk font-monospace"><a href="https://www.linkedin.com/in/rafsanzani-suhada99" style="text-decoration: none;" class="text-white" target="_blank">Rafshanzani Suhada</a></li>
+				<li class="cyberpunk font-monospace"><a href="https://www.linkedin.com/in/fariqfgi" style="text-decoration: none;" class="text-white" target="_blank">Fariq Fadillah</a></li>
+				<li class="cyberpunk font-monospace"><a href="https://www.linkedin.com/in/novran-f-a970a9135" style="text-decoration: none;" class="text-white" target="_blank">Novran Faathir</a></li>
+			</ul>
+
+			<hr class="mt-5" />
+
+	    <svg><text x="50%" y="50%" dy=".35em" text-anchor="middle">Congratulation to the Winners</text></svg>
+			<div class="row mb-5">
+				<ol class="list-group list-group-numbered font-monospace">
+				  <li class="list-group-item d-flex justify-content-between align-items-start">
+				    <div class="ms-2 me-auto">
+				      <div class="fw-bold"><a class="text-white" style="text-decoration:none" href="https://github.com/msfir">msfir</a></div>
+				      Badges: <span class="badge bg-success rounded-pill">Scoreboard Rank #1</span> <span class="badge bg-warning text-dark rounded-pill">Sent a write-up</span> <span class="badge bg-danger text-white rounded-pill">Well-written report</span>
+				    </div>
+				  </li>
+				  <li class="list-group-item d-flex justify-content-between align-items-start">
+				    <div class="ms-2 me-auto">
+				      <div class="fw-bold"><a class="text-white" style="text-decoration:none" href="https://www.linkedin.com/in/agus-prasetyo-6005a9231">404Gh0st</a></div>
+				      Badges: <span class="badge bg-success rounded-pill">Scoreboard Rank #2</span> <span class="badge bg-warning text-dark rounded-pill">Sent a write-up</span> <span class="badge bg-danger text-white rounded-pill">Well-written report</span>
+				    </div>
+				  </li>
+				  <li class="list-group-item d-flex justify-content-between align-items-start">
+				    <div class="ms-2 me-auto">
+				      <div class="fw-bold"><a class="text-white" style="text-decoration:none" href="https://daffa.info/">daffainfo</a></div>
+				      Badges: <span class="badge bg-success rounded-pill">Scoreboard Rank #3</span> <span class="badge bg-warning text-dark rounded-pill">Sent a write-up</span> <span class="badge bg-danger text-white rounded-pill">Well-written report</span>
+				    </div>
+				  </li>
+				  <li class="list-group-item d-flex justify-content-between align-items-start">
+				    <div class="ms-2 me-auto">
+				      <div class="fw-bold"><a class="text-white" style="text-decoration:none" href="https://github.com/ElysianWorld">Phantom</a></div>
+				      Badges: <span class="badge bg-success rounded-pill">Scoreboard Rank #4</span> <span class="badge bg-warning text-dark rounded-pill">Sent a write-up</span>
+				    </div>
+				  </li>
+				  <li class="list-group-item d-flex justify-content-between align-items-start">
+				    <div class="ms-2 me-auto">
+				      <div class="fw-bold">FJKT48</div>
+				      Badges: <span class="badge bg-success rounded-pill">Scoreboard Rank #7</span> <span class="badge bg-warning text-dark rounded-pill">Sent a write-up</span>
+				    </div>
+				  </li>
+				</ol>
+			</div>
+
+	    <div class="row font-monospace"><p>Here is the previously undisclosed Final Top-10 Leaderboard, as the Player Dashboard Leaderboard was frozen one hour before the competition concluded at <b>1692475200</b> GMT +7.</p></div>
+
+			<table class="table table-striped font-monospace">
+			  <thead>
+			    <tr>
+			      <th scope="col">#</th>
+			      <th scope="col">Player-name</th>
+			      <th scope="col">Solved Categories</th>
+			      <th scope="col">Last Score(s)</th>
+			    </tr>
+			  </thead>
+			  <tbody>
+			    <tr>
+			      <th scope="row">1</th>
+			      <td><b>msfir</b> <span class="text-warning">#1</span></td>
+			      <td>Reverse Engineering, Digital Forensic, Cryptography, PWN, Web Exploitation</td>
+			      <td>2781</td>
+			    </tr>
+			    <tr>
+			      <th scope="row">2</th>
+			      <td><b>404Gh0st</b> <span class="text-warning">#2</span></td>
+			      <td>Digital Forensic, Cryptography, Web Exploitation, Boot2Root</td>
+			      <td>2732</td>
+			    </tr>
+			    <tr>
+			      <th scope="row">3</th>
+			      <td><b>daffainfo</b> <span class="text-warning">#3</span></td>
+			      <td>Digital Forensic, Web Exploitation, Cryptography</td>
+			      <td>2672</td>
+			    </tr>
+			    <tr>
+			      <th scope="row">4</th>
+			      <td><b>Phantom</b> <span class="text-warning">#4</span></td>
+			      <td>Cryptography, Web Exploitation</td>
+			      <td>2460</td>
+			    </tr>
+			    <tr>
+			      <th scope="row">5</th>
+			      <td><b>river</b> <span class="text-danger">X</span></td>
+			      <td>Reverse Engineering, Cryptography, Web Exploitation, Digital Forensic</td>
+			      <td>2330</td>
+			    </tr>
+			    <tr>
+			      <th scope="row">6</th>
+			      <td><b>beluga</b> <span class="text-danger">X</span></td>
+			      <td>Web Exploitation, Boot2Root</td>
+			      <td>2241</td>
+			    </tr>
+			    <tr>
+			      <th scope="row">7</th>
+			      <td><b>FJKT48</b> <span class="text-warning">#5</span></td>
+			      <td>Digital Forensic, Reverse Engineering, Cryptography, Web Exploitation</td>
+			      <td>2221</td>
+			    </tr>
+			    <tr>
+			      <th scope="row">8</th>
+			      <td>kucing-batuk</td>
+			      <td>PWN, Cryptography, Digital Forensic, Reverse Engineering, Web Exploitation</td>
+			      <td>2001</td>
+			    </tr>
+			    <tr>
+			      <th scope="row">9</th>
+			      <td>zxc</td>
+			      <td>Digital Forensic, Web Exploitation</td>
+			      <td>1912</td>
+			    </tr>
+			    <tr>
+			      <th scope="row">10</th>
+			      <td>sayaturu</td>
+			      <td>Web Exploitation, Digital Forensic</td>
+			      <td>1900</td>
+			    </tr>
+			  </tbody>
+			</table>
+
+			<hr class="mt-5" />
+
+			<svg><text x="50%" y="50%" dy=".35em" text-anchor="middle">Thanks to Our Generous Sponsors</text></svg>
+
+			<div class="row text-center">
+				<div class="col">
+					<a href="https://vocagame.com/"><img src="https://zerobyte.id/files/0byteCTF-2023/sponsors/voca-game.webp" title="VocaGame - Top up Game dan Reseller Voucher Game termurah" class="img-fluid" style="max-height:70px;"></a>
+				</div>
+				<div class="col">
+					<a href="https://www.hack.co.id/"><img src="https://zerobyte.id/files/0byteCTF-2023/sponsors/ehi.png" title="Ethical Hacker Indonesia" class="img-fluid" style="max-height:70px;"></a>
+				</div>
+				<div class="col">
+					<a href="https://huki-sniper.net/"><img src="https://zerobyte.id/files/0byteCTF-2023/sponsors/huki-logo.png" title="HUKI Sniper Bot" class="img-fluid" style="max-height:70px;"></a>
+				</div>
+				<div class="col">
+					<a href="https://archonlabs.id/"><img src="https://zerobyte.id/files/0byteCTF-2023/sponsors/archonlabs.png" title="ArchonLabs - Engineering the Secure Future" class="img-fluid" style="max-height:70px;"></a>
+				</div>
+				<div class="col">
+					<a href="https://github.com/kitabisa/teler"><img src="https://zerobyte.id/files/0byteCTF-2023/sponsors/teler.png" title="Teler - Real-time HTTP Intrusion Detection" class="img-fluid" style="max-height:70px;"></a>
+				</div>
+				<div class="col">
+					<a href="https://www.mii.co.id/"><img src="https://zerobyte.id/files/0byteCTF-2023/sponsors/mii-logo.png" title="Mitra Integrasi Informatika" class="img-fluid" style="max-height:70px;"></a>
+				</div>
+
+				<div class="row mt-3">
+					<p>And many thanks to <b>Digit Oktavianto</b> for the materials support.</p>
+				</div>
+			</div>
+
+			<hr class="mt-5" />
+			<footer class="text-center">&copy; 2023 by ZeroByte.ID</footer>
+			<div class="mb-5"></div>
+
+		</div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+  </body>
+</html>
